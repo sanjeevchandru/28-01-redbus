@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.navbar{
+    box-shadow: 0 0  10px #cccc;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    .nav-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        img{
+            cursor: pointer;
+        }
+        .navs{
+            display: flex;
+            justify-content: space-between;
+            width: 20%;
+            p{
+                cursor: pointer;;
+            }
+        }
+    }
+}
+.home-sec{
+    .det-title{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 8% ;
+        h5{
+            width: 10%;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            p{
+                color: #ccc;
+            }
+        }
+
+    }
+    .parent-row{
+        // border: 1px solid #ccc;
+        padding: 2% 0; 
+        .home-col{
+            padding: 10px;
+            border: 1px solid #ccc;
+            .det1{
+                display: flex;
+                justify-content: space-between;
+                width: 85%;
+                .det1-col{
+                    width: 55%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    // background-color: red;
+                }
+            }
+            .det2{
+                display: flex;
+                justify-content: space-between;
+                .det2-col{
+                    display: flex;
+                    justify-content: space-between;
+                    // background-color: red;
+                    width: 40%;
+                }
+            }
+            .det3{
+                display: flex;
+                justify-content: flex-end;
+                // background-color: red;
+                .det3-card{
+                    // background-color: orange;
+                    padding: 5px;
+                    width: 63%;
+                    display: flex;
+                    justify-content: space-between;
+                    .det3-col{
+                        width: 45%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+            .det4{
+                // background-color: red;
+                display: flex;
+                justify-content: space-between;
+                width: 25%;
+                .det4-row{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 50%;
+                }
+                .det4-location{
+                    background-color: #ebdfdf;
+                    padding: 2px 3px;
+                    border-radius: 5px;
+                }
+            }
+            .det6{
+                display: flex;
+                width: 100%;
+                justify-content: flex-end;
+                align-items: center;
+                .det6-row{
+                    width: 60%;
+                    opacity: 0;
+                    .det6-col{
+                        display: flex;
+                        justify-content: space-between;
+                        div{
+                            p:hover{
+                                color: #d84e55;
+                            }
+                        }
+                    }
+                }
+                .view-seate{
+                    padding-left: 10px;
+                    button{
+                        border: 0;
+                        padding: 10px;
+                        background-color: #d84e55;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .home-col:hover{
+            box-shadow: 0 0 20px #ccc;
+            transition: all 0.5s ease;
+            .det6{
+                .det6-row{
+                    // display: block;
+                    transition: all 1s ease;
+                    opacity: 1;
+                }
+            }
+
+        }
+        .det5-icon{
+            background-color: #f8f9fa;
+            .det5-row{
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+                padding: 15px;
+                .det5-col{
+                    width:33.33% ;
+                    display: flex;
+                    padding: 10px;
+                    p{
+                        padding: 0 5px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .det7-seatSec{
+            background-color: #eeeded;
+            
+            .det7-seatrow{
+                padding: 3% 0;
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+                margin-left: 10%;
+                border-bottom: 2px solid #999;
+                .det7-pricecol{
+                    .det7-pricecard{
+                        p{
+                            padding: 5px 15px;
+                            cursor: pointer;
+                        }
+                        // p:hover{
+                        //     background-color: #000;
+                        //     color: #fff;
+                        // }
+                    }
+                }
+            }
+            .seat-book{
+                padding: 3% 10%;
+                // background-color: #fff;
+                .seat-book-sec{
+                    display: flex;
+                    .seat-book-row1{
+                        background-color: #999;
+                        padding: 4px;
+                    }
+                    .seat-book-row2{
+                        border-right: 1px solid #999;
+                        padding: 20px;
+                        background-color: #fff;
+                    }
+                    .seat-book-row{
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 60%;
+                        background-color: #fff;
+                        position: relative;
+                        .seat-book-col{
+                            width: 10%;
+                            // background-color: #fff;
+                            padding: 10px;
+                            .seat-book-card{
+                                // background-color: #d84e55;
+                                cursor: pointer;
+                                p{
+                                    font-size: 30px;
+                                }
+                                button{
+                                    position: absolute;
+                                    bottom: 0;
+                                    // right: 10%;
+                                }
+                            }
+                        }
+                    }
+                    .book-btn-row{
+                        .book-btn-card{
+                            button{
+                                border: 0;
+                                padding: 10px 45px;
+                                background-color: #d84e55 ;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+//https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjlUK6CjfKF3bHb58gxI1zuyMEQl0dFrG7VBwSI15iUWxH5AOawU4WQh7JI87PjKPqjdg&usqp=CAU  success
+//https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzDnJq4d2Mc-54PHHnyE1uK-tFPLH13s1DBg&usqp=CAU unsuccess
+//https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy8s0uqC4tc3ojUG7svDQBh5S28OllCaUXAJrE7vhYn80SaxgT5o6jfodZEf3ShYlszks&usqp=CAU sleeper unsuccess
+//https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ZR9LR4uN6bkqoHfr5d1ikSp03z--xYQia5DjDjCmCPeMa9l1UuTyLAFVCEuuDCHnhK8&usqp=CAU sleeper success
